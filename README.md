@@ -114,6 +114,8 @@
 >Change the "/create" endpoint to accept a list of arguments
 >
 >When creating a POI, verify its existence (do not allow POI's with the same coordinates)
+>
+>To protect the backend, we could adopt a Gateway API solution, such as AWS, ZUPme or Sensedia Gateway, for troubleshooting, throttling, security (Oauth 2, JWS) implementation, authentication, etc.
 
 ## Support materials
 >https://www.mkyong.com/java8/java-8-streams-filter-examples/
