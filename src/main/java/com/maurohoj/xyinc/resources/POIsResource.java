@@ -60,7 +60,7 @@ public class POIsResource {
 		}
 	}
 	
-	@RequestMapping(value = "/POIsNearby", method = { RequestMethod.GET })
+	@RequestMapping(value = "/poisNearby", method = { RequestMethod.GET })
 	public ResponseEntity<?> getPOIsNearby(@RequestParam("coordx") int coordx, @RequestParam("coordy") int coordy, @RequestParam("maxDistance") double maxDistance){
 		try {
             POIs poiReference = new POIs(null, "POI Reference", coordx, coordy);
