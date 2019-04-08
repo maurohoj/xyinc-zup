@@ -6,6 +6,7 @@
 
 ## About Database
 > This project uses the H2 resource as the database. This feature is instantiated in memory and can be accessed through the URL http://localhost:8080/h2-console. For more information visit [H2](https://www.h2database.com/html/main.html)
+>
 >For this project, a Test Profile is used, which can be identified in the /src/main/resouces/"application-test.properties" directory, referenced in "application.properties".
 
 
@@ -51,6 +52,7 @@
 >
 > Example:
 > URI: http://localhost:8080
+>
 > Body:
 ```
 {
@@ -60,7 +62,7 @@
 }
 ```
 > ` GET /pois/poisNearby `
-
+>
 > Lists the POIs by proximity according to the input parameters.
 >
 > Expected parameters:
@@ -87,16 +89,23 @@
 
 ## Considerations
 >All endpoints returns status 200 (ok) if everything goes well and 400 (bad request) if something goes wrong
+>
 >JAVA_VERSION: 1.8
+>
 >SPRING_VERSION: 2.1.4
+>
 >MAVEN_VERSION: 3.5.0
 
 ## Future improvements
 >Based on the real world, and based on the mathematics of the distance between two points, it would be interesting in the future to implement calculations known as "Haversine", taking into account the Earth's curvature. However, since this is a simple test, I did not consider these calculations.
+>
 >Correct http responses to fit the REST concept
+>
 >Change the "/create" endpoint to accept a list of arguments
+>
 >When creating a POI, verify its existence (do not allow POI's with the same coordinates)
 
 ## Support materials
 >https://www.mkyong.com/java8/java-8-streams-filter-examples/
+>
 >https://github.com/jasonwinn/haversine/blob/master/Haversine.java
