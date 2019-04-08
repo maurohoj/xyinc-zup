@@ -71,6 +71,16 @@
 >
 > Example: http://localhost:8080/pois/poisNearby?coordX=20&coordY=10&maxDistance=10
 >
+
+## Requests and tests
+>
+>For requests and tests, i used the Postman tool.
+>
+>If you want to use it, please use the direct import link in the tool: https://www.getpostman.com/collections/082204ae96892ccf9686
+>
+>The link above contains the "status code" and "body not null" tests.
+>
+
 ## Technologies
 
 > Backend
